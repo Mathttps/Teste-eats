@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>DrivenEats</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>DrivenEats</h1>
+            <p>Sua comida em 6 minutos</p>
+        </div>
+    </div>
+    <div class="content">
+        <div class="escolhas">
+            <h1>Primeiro, seu prato</h1>
+            <div class="card">
+                <div class="cards frango" onclick="comida(this)">
+                    <img src="./imgs/frango_yin_yang.png" alt="frango_yin_yang">
+                    <h2>Frango Yin Yang</h2>
+                    <p>Um pouco de batata, um pouco de salada</p>
+                    <h2 class="preco">R$ 14,40</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="cards frango margin-16" onclick="comida(this)">
+                    <img src="./imgs/frango_yin_yang.png" alt="frango_yin_yang">
+                    <h2>Frango Yin Yang</h2>
+                    <p>Um pouco de batata, um pouco de salada</p>
+                    <h2 class="preco">R$ 13,30</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="cards frango margin-16" onclick="comida(this)">
+                    <img src="./imgs/frango_yin_yang.png" alt="frango_yin_yang">
+                    <h2>Frango Yin Yang</h2>
+                    <p>Um pouco de batata, um pouco de salada</p>
+                    <h2 class="preco">R$ 12,20</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="cards frango margin-16 margin-10" onclick="comida(this)">
+                    <img src="./imgs/frango_yin_yang.png" alt="frango_yin_yang">
+                    <h2>Frango Yin Yang</h2>
+                    <p>Um pouco de batata, um pouco de salada</p>
+                    <h2 class="preco">R$ 11,10</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="escolhas">
+            <h1>Agora, sua bebida</h1>
+            <div class="card">
+                <div class="cards bebida" onclick="bebida(this)">
+                    <img src="./imgs/coca-cola.png" alt="coca-cola">
+                    <h2>Coca-Cola</h2>
+                    <p>Lata 350ml</p>
+                    <h2 class="preco">R$ 4,40</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="cards bebida margin-16" onclick="bebida(this)">
+                    <img src="./imgs/coca-cola.png" alt="coca-cola">
+                    <h2>Coca-Cola</h2>
+                    <p>Lata 350ml</p>
+                    <h2 class="preco">R$ 3,30</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="cards bebida margin-16" onclick="bebida(this)">
+                    <img src="./imgs/coca-cola.png" alt="coca-cola">
+                    <h2>Coca-Cola</h2>
+                    <p>Lata 350ml</p>
+                    <h2 class="preco">R$ 2,20</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="cards bebida margin-16 margin-10" onclick="bebida(this)">
+                    <img src="./imgs/coca-cola.png" alt="coca-cola">
+                    <h2>Coca-Cola</h2>
+                    <p>Lata 350ml</p>
+                    <h2 class="preco">R$ 1,10</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="escolhas">
+            <h1>Por fim, sua sobremesa</h1>
+            <div class="card">
+                <div class="cards pudim" onclick="sobremesa(this)">
+                    <img src="./imgs/pudim.png" alt="pudim.png">
+                    <h2>Pudim</h2>
+                    <p>Apenas pudim</p>
+                    <h2 class="preco">R$ 7,70</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="cards pudim margin-16" onclick="sobremesa(this)">
+                    <img src="./imgs/pudim.png" alt="pudim.png">
+                    <h2>Pudim</h2>
+                    <p>Apenas pudim</p>
+                    <h2 class="preco">R$ 6,60</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="cards pudim margin-16" onclick="sobremesa(this)">
+                    <img src="./imgs/pudim.png" alt="pudim.png">
+                    <h2>Pudim</h2>
+                    <p>Apenas pudim</p>
+                    <h2 class="preco">R$ 5,50</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="cards pudim margin-16 margin-10" onclick="sobremesa(this)">
+                    <img src="./imgs/pudim.png" alt="pudim.png">
+                    <h2>Pudim</h2>
+                    <p>Apenas pudim</p>
+                    <h2 class="preco">R$ 4,40</h2>
+                    <ion-icon class="iconic" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button disabled class="confirm" onclick="teste(this)">
+            <h1>Selecione os 3 itens<br>
+                para fechar o pedido</h1>
+        </button>
+    </div>
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
